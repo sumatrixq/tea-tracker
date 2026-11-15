@@ -2,7 +2,7 @@
   "expo": {
     "name": "Чайный путь",
     "slug": "chai-puti",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "newArchEnabled": false,
@@ -12,6 +12,19 @@
       "adaptiveIcon": { "foregroundImage": "./assets/icon.png", "backgroundColor": "#8E1616" },
       "permissions": ["VIBRATE", "POST_NOTIFICATIONS"]
     },
-    "plugins": ["expo-notifications"]
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/sounds/bell.wav",
+            "./assets/sounds/gong.wav",
+            "./assets/sounds/chime.wav",
+            "./assets/sounds/bowl.wav",
+            "./assets/sounds/beep.wav"
+          ]
+        }
+      ]
+    ]
   }
 }
